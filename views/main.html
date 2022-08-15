@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마일 라식 부작용 예측</title>
+</head>
+
+<body>
+    <h1>데이터 입력</h1>
+    <form action="/result" method="post">
+        <div>
+            <p>
+                근시•원시
+                <input type="number" name="vision_l">
+                <input type="number" name="vision_r">
+
+                교정량
+                <input type="number" name="fix_q_l">
+                <input type="number" name="fix_q_r">
+            </p>
+            <p>
+                난시
+                <input type="number" name="nan_l">
+                <input type="number" name="nan_r">
+
+                잔여각막
+                <input type="number" name="remain_l">
+                <input type="number" name="remain_r">
+            </p>
+            <p>
+                난시 축
+                <input type="number" name="nan_axis_l">
+                <input type="number" name="nan_axis_r">
+
+                야간 동공 크기
+                <input type="number" name="night_l">
+                <input type="number" name="night_r">
+            </p>
+            <p>
+                교정 시력
+                <input type="number" name="super_vision_l">
+                <input type="number" name="super_vision_r">
+
+                눈물 분비량
+                <input type="number" name="eyes_water_l">
+                <input type="number" name="eyes_water_r">
+            </p>
+            <p>
+                각막 두께
+                <input type="number" name="thick_l">
+                <input type="number" name="thick_r">
+
+                내피세포 검사
+                <input type="number" name="internal_l">
+                <input type="number" name="internal_r">
+            </p>
+            <p>
+                <button type="submit">제출하기</button>
+            </p>
+        </div>
+    </form>
+</body>
+
+</html>
