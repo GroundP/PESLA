@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    {% if result %}
+        <script>
+            alert("{% if value %} 부작용 확률이 높습니다. {% else %} 부작용 확률이 낮습니다. {% endif %}");
+        </script>
+    {% endif %}
+
     <h1>데이터 입력</h1>
     <form action="/result" method="post">
         <div>

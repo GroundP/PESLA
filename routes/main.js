@@ -6,7 +6,8 @@ router.get('/', async (req, res, next) => {
 
     try {
         console.log(req.params);
-        res.sendFile(path.join(__dirname, '../views/main.html'));
+        //res.sendFile(path.join(__dirname, '../views/main.html'));
+        res.render("main");
         //res.send('heeloo');
     } catch (error) {
         console.error(error);

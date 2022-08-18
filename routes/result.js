@@ -17,9 +17,6 @@ router.post('/', async (req, res, next) => {
             internal_l, internal_r,
         } = req.body;
 
-
-        const high = vision_l > 5;
-
         await PeslaRes.create({
             vision_l, vision_r,
             nan_l, nan_r,
@@ -33,9 +30,10 @@ router.post('/', async (req, res, next) => {
             internal_l, internal_r,
         });
 
-        //res.send(high ? "확률이 높습니다" : "확률이 낮습니다.");
-        res.render('result', {
+        const high = vision_l > 5;
+        res.render('main', {
             value: high,
+            result: true,
         });
 
     } catch (err) {

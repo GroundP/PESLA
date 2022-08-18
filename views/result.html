@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +9,9 @@
     <title>예측 결과</title>
 </head>
 <body>
+    <script>
+        alert("{% if value %} 부작용 확률이 높습니다. {% else %} 부작용 확률이 낮습니다. {% endif %}");
+    </script>
     <p><h1>예측 결과</h1></p>
     <p><h2>{% if value %} 부작용 확률이 높습니다. {% else %} 부작용 확률이 낮습니다. {% endif %} </h2></p>
 
